@@ -6,6 +6,13 @@
     <title>Reworr's Blogs</title>
     <link rel="stylesheet" href="hacker.css">
     <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #00ff00;
+            margin: 0;
+            padding: 0;
+            font-size: 17px;
+        }
         .container {
             max-width: 800px;
             margin: 0 auto;
@@ -13,37 +20,93 @@
         }
         .header {
             text-align: center;
+            margin-bottom: 40px;
         }
-        .post {
-            margin-top: 20px;
+        .header h1 {
+            font-size: 2.75em;
+            margin-bottom: 10px;
+            color: #0f0;
+        }
+        .header p {
+            font-size: 1.3em;
+            margin-bottom: 20px;
+            color: #00ff99;
+        }
+        .btn-container {
+            text-align: center;
+            margin-bottom: 40px;
         }
         .btn {
             display: inline-block;
-            padding: 10px 20px;
-            margin-top: 20px;
-            background-color: #0f0;
+            padding: 15px 30px;
+            margin: 10px;
+            background-color: #00ff00;
             color: #222;
             text-decoration: none;
             border-radius: 5px;
             text-align: center;
+            font-size: 19px;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 255, 0, 0.2);
         }
         .btn:hover {
-            background-color: #0c0;
+            background-color: #00cc00;
+            transform: scale(1.05);
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            font-size: 2.1em;
+            border-bottom: 2px solid #00ff00;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            color: #0f0;
+        }
+        .section p {
+            text-align: justify;
+            line-height: 1.8;
+        }
+        .contact a {
+            color: #00ff00;
+            text-decoration: none;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            .header p {
+                font-size: 1em;
+            }
+            .btn {
+                padding: 10px 20px;
+                font-size: 16px;
+            }
+            .section h2 {
+                font-size: 1.5em;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <header class="header">
-            <h1 class="text-uppercase">Reworr's Blogs</h1>
-            <a href="index.html" class="btn">Back to Home</a>
+            <h1 class="text">Reworr's blogs</h1>
+            <p class="lead">Explore my latest articles and posts on various platforms</p>
         </header>
-        <section class="posts">
-                <h3>List of blogs</h3>
-                <p><a href="https://substack.com/@reworr">- Substack</a></p>
-                <p><a href="https://medium.com/@reworr">- Medium</a></p>
-                <p><a href="https://x.com/Reworr_R">- Twitter</a></p>
-                <p><a href="https://t.me/Reworr">- Telegram</a></p>
+        <div class="btn-container">
+            <a href="index.html" class="btn">Back to Home</a>
+        </div>
+        <section class="section posts">
+            <h2>List of Blogs</h2>
+            <p><b><a href="https://substack.com/@reworr">- Substack</a></p></b>
+            <p><b><a href="https://medium.com/@reworr">- Medium</a></p></b>
+            <p><b><a href="https://x.com/Reworr_R">- Twitter</a></p></b>
+            <p><b><a href="https://t.me/Reworr">- Telegram</a></p></b>
         </section>
     </div>
 </body>
