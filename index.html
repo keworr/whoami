@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="hacker.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #00ff00;
+            margin: 0;
+            padding: 0;
+            font-size: 17px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .profile-pic {
+            display: block;
+            border-radius: 50%;
+            max-width: 150px;
+            margin: 0 auto 20px;
+            border: 3px solid #0f0;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .header h1 {
+            font-size: 2.75em;
+            margin-bottom: 10px;
+            color: #0f0;
+        }
+        .header p {
+            font-size: 1.3em;
+            margin-bottom: 20px;
+            color: #00ff99;
+        }
+        .btn-container {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            margin: 10px;
+            background-color: #00ff00;
+            color: #222;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 19px;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 255, 0, 0.2);
+        }
+        .btn:hover {
+            background-color: #00cc00;
+            transform: scale(1.05);
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            font-size: 2.1em;
+            border-bottom: 2px solid #00ff00;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            color: #0f0;
+        }
+        .section p {
+            text-align: justify;
+            line-height: 1.8;
+        }
+        .experience-item {
+            margin-bottom: 10px;
+        }
+        .experience-item h3 {
+            font-size: 1.6em;
+            margin-bottom: 5px;
+        }
+        .experience-item p {
+            font-size: 1.1em;
+            line-height: 1.7;
+            margin-bottom: 2px;
+        }
+        .company-name {
+            font-weight: normal;
+            color: #00ff99;
+        }
+        .titles {
+            font-weight: bold;
+        }
+        .role {
+            font-size: 1.1em;
+            margin-bottom: 5px;
+        }
+        .articles .article-item {
+            margin-bottom: 20px;
+        }
+        .articles .article-item h3 {
+            margin-bottom: 10px;
+        }
+        .articles .article-item img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .contact a {
+            color: #00ff00;
+            text-decoration: none;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            .header p {
+                font-size: 1em;
+            }
+            .btn {
+                padding: 10px 20px;
+                font-size: 16px;
+            }
+            .section h2 {
+                font-size: 1.5em;
+            }
+            .experience-item h3 {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+            <h1 class="text">Reworr</h1>
+            <p class="lead">AI Security Researcher at Palisade Research</p>
+        </header>
+        <div class="btn-container">
+            <a href="blog.html" class="btn">Blogs</a>
+            <a href="CV.html" class="btn">CV</a>
+        </div>
+        <section class="section about">
+            <h2>About Me</h2>
+            <p>
+                I am an AI Security & Safety Researcher who pivoted from Offensive Cyber Security.
+            </p>
+            <p>
+                My cyber security experience is in red teaming, web/mobile application security analysis, social engineering, and spear-phishing. I also have experience in AI security testing, including application-level security or AI-specific vulnerabilities (e.g., adversarial attacks).
+            </p>
+            <p>
+                Now I am doing research on AI's offensive capabilities (mainly in information security, social engineering, and disinformation) and on security of AI (including AI Red Teaming).
+            </p>
+            <p>
+                <a href="CV.html">More info</a>
+            </p>
+        </section>
+        <section class="section experience">
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <h3 class="role">AI Security Researcher</h3>
+                <a href="https://www.palisaderesearch.org" class="company-name">Palisade Research</a> (2024 - Present)
+                <p>AI Red Teaming</p>
+                <p>Researching AI Offensive Capabilities</p>
+            </div>
+            <div class="experience-item">
+                <h3 class="role">Penetration Tester</h3>
+                <a href="https://www.deteact.com" class="company-name">Deteact</a> (2023 - 2024)
+                <p>Web/Mobile Application Security Analysis</p>
+                <p>Social engineering, Spear-phishing attacks</p>
+            </div>
+            <div class="experience-item">
+                <h3 class="role">Information Security Analyst</h3>
+                <a href="https://cleantalk.org" class="company-name">CleanTalk Inc.</a> (2023)
+                <p>Web vulnerability research. Develop tools/rules for the discovery of web vulnerabilities</p>
+                <p>Web security mitigation and hardening; web-malware analysis</p>
+            </div>
+            <div class="experience-item">
+                <h3 class="role">Web Security Analyst</h3>
+                <a href="https://equalit.ie" class="company-name">eQualitie</a> (2022)
+                <p>A six-month internship "Web Security Fellowship"</p>
+            </div>
+            <div class="experience-item">
+                <h3 class="role">Penetration Tester</h3>
+                <a class="company-name">Engineering Center Regional Systems</a> (2021 - 2023)
+                <p>White/Black-box penetration testing (web security testing, internal pentest, phishing)</p>
+            </div>
+        </section>
+        <section class="section articles">
+            <h2>Articles & Talks</h2>
+            <div class="article-item">
+                <h3><a class="titles" href="https://reworr.substack.com/p/replication-work-of-how-johnny-can">Replication Work of LLM Security research (article)</a></h3>
+                <img src="https://pbs.twimg.com/media/GH6kU11XAAAuYym?format=jpg&name=small" alt="Replication Work of LLM Security Research">
+                <p>A replication work of the research ”How Johnny Can Persuade LLMs to Jailbreak Them" on the use of psychology and persuasion techniques to jailbreak large language models.<br>I reviewed the tests and found that the effectiveness of the method was caused by a confounding variable, not by “persuasion techniques”, and the results are incorrect.
+                </p>
+            </div>
+            <div class="article-item">
+                <h3><a class="titles" href="https://medium.com/@reworr/pentest-the-botnet-734c4fddc9fb">Botnet Takeover via Command Injection (article)</a></h3>
+                <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*K0v6FV7PrqD7rv8oHHNDbQ.png" alt="Botnet Takeover via Command Injection">
+                <p>An article about how I was able to hijack a botnet using an OS command injection vulnerability.</p>
+            </div>
+            <div class="article-item">
+                <h3><a class="titles" href="https://t.me/defcon_tbilisi/28">LLM Security 1: Web LLM Attacks (slides)</a></h3>
+                <img src="https://ar5iv.labs.arxiv.org/html/2302.12173/assets/x13.png" alt="Web LLM Attacks">
+                <p>Workshop dedicated to application-level attacks on LLMs.</p>
+            </div>
+            <div class="article-item">
+                <h3><a class="titles" href="https://t.me/defcon_tbilisi/22">Funny Attacks on Fraud Applications (slides)</a></h3>
+                <p>Meetup about vulnerabilities in fraud applications such as malware, phishing sites and botnets made by real attackers.</p>
+            </div>
+            <div class="article-item">
+                <h3>Other offline meetups in the Hackerspace <a class="titles" href="https://f0rth.space/">(f0rth.sp4ce)</a></h3>
+                <p>Without records/slides</p>
+            </div>
+        </section>
+        <section class="section contact">
+            <h2>Contact</h2>
+            <p>If you'd like to get in touch, feel free to reach out via Email/Telegram or connect with me on LinkedIn.</p>
+            <p>Email: <a href="mailto:reworr@palisaderesearch.org">reworr@palisaderesearch.org</a></p>
+            <p>Telegram: <a href="https://www.t.me/reworr_r">t.me/reworr_r</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/reworr">linkedin.com/in/reworr</a></p>
+        </section>
+    </div>
+</body>
+</html>

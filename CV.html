@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reworr's CV</title>
+    <link rel="stylesheet" href="hacker.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #00ff00;
+            margin: 0;
+            padding: 0;
+            font-size: 17px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .profile-pic {
+            display: block;
+            border-radius: 50%;
+            max-width: 150px;
+            margin: 0 auto 20px;
+            border: 3px solid #0f0;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .header h1 {
+            font-size: 2.75em;
+            margin-bottom: 10px;
+            color: #0f0;
+        }
+        .header p {
+            font-size: 1.3em;
+            margin-bottom: 20px;
+            color: #00ff99;
+        }
+        .btn-container {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            margin: 10px;
+            background-color: #00ff00;
+            color: #222;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 19px;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 255, 0, 0.2);
+        }
+        .btn:hover {
+            background-color: #00cc00;
+            transform: scale(1.05);
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            font-size: 2.1em;
+            border-bottom: 2px solid #00ff00;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            color: #0f0;
+        }
+        .section p {
+            text-align: justify;
+            line-height: 1.8;
+        }
+        .experience-item {
+            margin-bottom: 10px;
+        }
+        .experience-item h3 {
+            font-size: 1.6em;
+            margin-bottom: 5px;
+        }
+        .experience-item p {
+            font-size: 1.1em;
+            line-height: 1.7;
+            margin-bottom: 2px;
+        }
+        .company-name {
+            font-weight: normal;
+            color: #00ff99;
+        }
+        .role {
+            font-size: 1.1em;
+            margin-bottom: 5px;
+        }
+        .skills-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .skills-list li {
+            margin-bottom: 15px;
+        }
+        .skills-list li::before {
+            content: "•";
+            color: #0f0;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            .header p {
+                font-size: 1em;
+            }
+            .btn {
+                padding: 10px 20px;
+                font-size: 16px;
+            }
+            .section h2 {
+                font-size: 1.5em;
+            }
+            .experience-item h3 {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="text">Reworr's CV</h1>
+            <p>Contact: <a href="mailto:reworr@palisaderesearch.org">reworr@palisaderesearch.org</a> | LinkedIn: <a href="https://www.linkedin.com/in/reworr">linkedin.com/in/reworr</a></p>
+            <a href="index.html" class="btn">Back to Home</a>
+        </header>
+
+        <section class="section personal-details">
+            <h2>Personal Details</h2>
+            <p>Email: <a href="mailto:reworr@palisaderesearch.org">reworr@palisaderesearch.org</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/reworr">linkedin.com/in/reworr</a></p>
+        </section>
+
+        <section class="section experience">
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <h3 class="role">AI Security Researcher</h3>
+                <a href="https://www.palisaderesearch.org" class="company-name">Palisade Research</a> (2024 - Present)
+                <p>AI Red Teaming</p>
+                <p>Researching AI Offensive Capabilities</p>
+            </div>
+            <div class="experience-item">
+                <h3 class="role">Penetration Tester</h3>
+                <a href="https://www.deteact.com" class="company-name">Deteact</a> (2023 - 2024)
+                <p>Web/Mobile Application Security Analysis</p>
+                <p>Social engineering, Spear-phishing attacks</p>
+            </div>
+            <div class="experience-item">
+                <h3 class="role">Information Security Analyst</h3>
+                <a href="https://cleantalk.org" class="company-name">CleanTalk Inc.</a> (2023)
+                <p>Web vulnerability research. Develop tools/rules for the discovery of web vulnerabilities</p>
+                <p>Web security mitigation and hardening; web-malware analysis</p>
+            </div>
+            <div class="experience-item">
+                <h3 class="role">Web Security Analyst</h3>
+                <a href="https://equalit.ie" class="company-name">eQualitie</a> (2022)
+                <p>A six-month internship "Web Security Fellowship"</p>
+            </div>
+            <div class="experience-item">
+                <h3 class="role">Penetration Tester</h3>
+                <a class="company-name">Engineering Center Regional Systems</a> (2021 - 2023)
+                <p>White/Black-box penetration testing (web security testing, internal pentest, phishing)</p>
+            </div>
+        </section>
+
+        <section class="section skills">
+            <h2>Skills</h2>
+            <h3>Computer Security</h3>
+            <ul class="skills-list">
+                <li>Security Testing & Vulnerability Research</li>
+                <li>Social Engineering/Spear-phishing</li>
+            </ul>
+            <h3>AI Security</h3>
+            <ul class="skills-list">
+                <li>AI Red Teaming</li>
+                <li>AI Offensive Capabilities & AI Evals</li>
+                <li>Security of AI-based Apps (LLM Apps, CV, etc.)</li>
+            </ul>
+            <h3>Non-Technical Interests</h3>
+            <ul class="skills-list">
+                <li>Decision Theory & Applied Rationality</li>
+                <li>Behavioral Sciences, Game Theory</li>
+                <li>Social/Cognitive psychology</li>
+                <li>Visualization of Complex Ideas</li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
